@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  ~ @author magefast@gmail.com https://www.magefast.com
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="dragonfly_productschildcategorytoparent_assign" xsi:type="object">Dragonfly\ProductsAssignCategory\Console\Command\AssignCategory</item>
+                <item name="dragonfly_productschildcategorytoparent_assign_child_parent" xsi:type="object">Dragonfly\ProductsAssignCategory\Console\Command\AssignProductsFromChildToParentCategory</item>
+                <item name="dragonfly_productschildcategorytoparent_assign_child_parent_by_parent_id" xsi:type="object">Dragonfly\ProductsAssignCategory\Console\Command\AssignProductsFromChildToParentCategoryByParentId</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
